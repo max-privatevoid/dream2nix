@@ -39,10 +39,6 @@ in {
     in {
       config = {
         dream2nix = {inherit instance outputs;};
-        # TODO(yusdacra): we could combine all the resolveImpure here if there are multiple
-        # TODO(yusdacra): maybe we could rename outputs with the same name to avoid collisions?
-        packages = getAttrFromOutputs "packages";
-        devShells = getAttrFromOutputs "devShells";
       };
     };
   };
