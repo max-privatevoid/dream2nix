@@ -325,7 +325,7 @@
       };
     };
   in
-    flake-parts.lib.mkFlake {inherit self;} {
+    flake-parts.lib.mkFlake {inherit inputs;} {
       imports = [
         ./tests
         ./templates
